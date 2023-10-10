@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(26, 103, 192);
+            color: rgb(255, 255, 255);
+            font: normal 20pt Arial; 
+        } 
+        h1 {
+            color: rgb(41, 6, 75) ;
+        } 
+        
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Já me livrei da maldição</p>
+
+   
+    <script>
+
+ //FORMATANDO STRINGS USANDO PLACE HOLDER = ${} ex. abaixo //
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) 
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) 
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+
+
+//PARA CONVERTER NUMERO PARA STRING, É USADO String()= aqui ele gera uma string ou n.toString()= aqui eu converto o que eu quiser em uma string //
+
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) 
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) 
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + String(s))
+
+ /*       var n1 = Number.parseInt(window.prompt('Digite um número: ')) 
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) 
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s)
+
+    no ex. acima usar parseInt ou parseFloat forma a inserção de um tipo de númeração em expecifico, no caso se vai ser só inteiro ou se vai ser só real 
+
+        var n1 = Number(window.prompt('Digite um número: ')) // string
+        var n2 = Number(window.prompt('Digite outro número: ')) // string
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s)//concatenação
+
+    a forma ultilizada acima (Number(n)) é uma versão mais atual do ECMASCRIPT ele permite inserir o número sem precisar selecionar se é inteiro ou real
+     */   
+        
+        // (number + number) para adição
+        // (string + string) para concatenação
+//(window.prompt) este comando tem como caracteristica converter a informação em String
+
+
+</script>
+</body>
+</html>

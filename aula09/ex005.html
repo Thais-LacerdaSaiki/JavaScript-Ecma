@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(73, 73, 237);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id ="msg">Clique em mim</div>
+    <!--<div id="msg">Clique em mim</div>-->
+    
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] 
+        var d = window.document.querySelector('div#msg') //id é representado por hasteg ('div#msg') e a class por ponto ('div.msg')
+        d.style.background = 'blue'
+
+        //var d = window.document.getElementsByName('msg')[0]
+       // d.innerText = 'Olá!'
+
+       
+       // var d = window.getElementById("msg")
+       // d.style.background = 'green'
+
+        //d.innerText = 'Estou aguardando...'
+       // window.document.getElementById('msg').innerText = 'Olá!'
+     
+       // window.document.write("Está escrito assim: " + p1.innerText)
+
+       // window.alert(p1.innerText) //se usar o innerText pega o texto sem formatação só o //texto, já o innerHTML
+      //  pega o HTML inteiro incluse as tags filhas
+
+       // p1.style.color = 'blue'
+       // corpo.style.background = 'black'
+
+       // para indicar qual é o paragrafo <p> é usado o número 0 entre colchetes ele vai    //indicar neste caso o primeiro <p> e na sucessão [1] vai indicar o segundo
+        
+    </script>
+</body>
+</html>
